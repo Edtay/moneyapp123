@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsinstallerDemo</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "bootstrap" %>
+  <%= javascript_include_tag "bootstrap.min" %>
+  <%= csrf_meta_tags %>
+  <%= include_gon %>
+</head>
+<body>
+<div class="container">
+	<div class="span3" style="float:left">
+		<br/>
+	</div>
+	<div class="span6">
+<%= yield %>
+    </div>
+</div>
+</body>
+</html>
